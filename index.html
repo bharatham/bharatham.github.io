@@ -14,8 +14,6 @@
                 <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-generic" data-slide-to="1"></li>
                 <li data-target="#carousel-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-generic" data-slide-to="3"></li>
-                <li data-target="#carousel-generic" data-slide-to="4"></li>
               </ol>
 
               <!-- Wrapper for slides -->
@@ -24,13 +22,7 @@
                   <img class="img-responsive img-full" src="img/all.jpg" alt="">
                 </div>
                 <div class="item">
-                  <img class="img-responsive img-full" src="img/pv.jpg" alt="">
-                </div>
-                <div class="item">
-                  <img class="img-responsive img-full" src="img/sp.jpg" alt="">
-                </div>
-                <div class="item">
-                  <img class="img-responsive" src="img/ed.jpg" alt="" style="min-width: 0%; max-height: 600px; margin-left: auto; margin-right: auto">
+                  <img class="img-responsive img-full" src="img/all2.jpg" alt="">
                 </div>
                 <div class="item">
                   <img class="img-responsive img-full" src="img/class.jpg" alt="">
@@ -86,13 +78,14 @@
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script>
       $(function(){
-        $("head").load("includes/head.html");
-        $("#nav-wrapper").load("includes/nav.html");
-        $("footer").load("includes/footer.html")
+        $("head").load("includes/head.html", function(){
+          $("#nav-wrapper").load("includes/nav.html");
+          $("footer").load("includes/footer.html")
+          $('.carousel').carousel({
+            interval: 1800 //changes the speed,
+          })
+        });
       });
-      $('.carousel').carousel({
-        interval: 1800 //changes the speed,
-      })
     </script>
   </body>
 </html>

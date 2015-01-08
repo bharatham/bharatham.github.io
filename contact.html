@@ -39,13 +39,11 @@
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script>
       $(function(){
-        $("head").load("includes/head.html");
-        $("#nav-wrapper").load("includes/nav.html");
-        $("footer").load("includes/footer.html")
+        $("head").load("includes/head.html", function(){
+          $("#nav-wrapper").load("includes/nav.html");
+          $("footer").load("includes/footer.html")
+        });
       });
-      $('.carousel').carousel({
-        interval: 1800 //changes the speed,
-      })
     </script>
   </body>
 

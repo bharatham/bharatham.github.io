@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
+  <head></head>
 
-<body>
-  <div id="nav-wrapper"></div>
-  <div class="container">
-    <div class="row">
-      <div class="box">
-        <div class="col-lg-12">
-          <hr>
-          <h2 class="intro-text text-center">About
-            <strong>the school</strong>
-          </h2>
-          <hr>
-        </div>
-        <div class="col-md-6">
-          <img class="img-responsive img-border-left" src="img/class.jpg" alt="">
-        </div>
-        <div class="col-md-6">
-          <p>
-            The Dance school ‘Bharatham’ was started in the year 1996 . The  students of Bharatham have performed in various Dance festivals in Chennai and TV Channels. They are receiving the Scholarship awarded by Centre for cultural Resources and Training .They have also been selected to perform by the VDS Arts Academy, Chennai under their Talent Revealing Opportunity Programme and the reviews have been very encouraging and have won the appreciation awards. The programmes of the students have been reviewed by critics in The Indian Express and The Hindu.
-          </p>
-          <p>
-            The students of Bharatham had presented a Dance Drama on the Theme “Shivalinga dharisanam” at the Natyanjali Festival , Chidambaram in February 2004.
-            The Dance Ballet “ Eashwara Dharisanam” staged by the young students of Bharatham has been received with extreme appreciation in and outside Chennai from the press and audience. The second Dance Ballet production “Shakthi Prabhaavam” has been staged in the dance Festival 2008-09 under the auspices of prestigious Sabhas in Chennai has also been received extremely well.
-          </p>
+  <body>
+    <div id="nav-wrapper"></div>
+    <div class="container">
+      <div class="row">
+        <div class="box">
+          <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center">About
+              <strong>the school</strong>
+            </h2>
+            <hr>
+          </div>
+          <div class="col-md-6">
+            <img class="img-responsive img-border-left" src="img/class.jpg" alt="">
+          </div>
+          <div class="col-md-6">
+            <p>
+              The Dance school ‘Bharatham’ was started in the year 1996 . The  students of Bharatham have performed in various Dance festivals in Chennai and TV Channels. They are receiving the Scholarship awarded by Centre for cultural Resources and Training .They have also been selected to perform by the VDS Arts Academy, Chennai under their Talent Revealing Opportunity Programme and the reviews have been very encouraging and have won the appreciation awards. The programmes of the students have been reviewed by critics in The Indian Express and The Hindu.
+            </p>
+            <p>
+              The students of Bharatham had presented a Dance Drama on the Theme “Shivalinga dharisanam” at the Natyanjali Festival , Chidambaram in February 2004.
+              The Dance Ballet “ Eashwara Dharisanam” staged by the young students of Bharatham has been received with extreme appreciation in and outside Chennai from the press and audience. The second Dance Ballet production “Shakthi Prabhaavam” has been staged in the dance Festival 2008-09 under the auspices of prestigious Sabhas in Chennai has also been received extremely well.
+            </p>
 
-          <p>
-            The third production “Paranthaama Vaibhavam” has been telecast live from Tirupati in the nadaneeranjanam Programme in SVBC Channel.
-          </p>
-          <p>
-            Apart from Bharathanatyam, the students are trained in vocal music by Yuvakalabharathi Sri Ramesh. The theoretical aspects of Bharathanatyam are taught to the students and they appear for Prayathnam level exams and the lower Examination of the Government of Tamilnadu.
-          </p>
+            <p>
+              The third production “Paranthaama Vaibhavam” has been telecast live from Tirupati in the nadaneeranjanam Programme in SVBC Channel.
+            </p>
+            <p>
+              Apart from Bharathanatyam, the students are trained in vocal music by Yuvakalabharathi Sri Ramesh. The theoretical aspects of Bharathanatyam are taught to the students and they appear for Prayathnam level exams and the lower Examination of the Government of Tamilnadu.
+            </p>
 
+          </div>
+          <div class="clearfix"></div>
         </div>
-        <div class="clearfix"></div>
       </div>
     </div>
-  </div>
-  <!-- /.container -->
+    <!-- /.container -->
 
-  <footer></footer>
-  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script>
       $(function(){
-        $("head").load("includes/head.html");
-        $("#nav-wrapper").load("includes/nav.html");
-        $("footer").load("includes/footer.html")
+        $("head").load("includes/head.html", function(){
+          $("#nav-wrapper").load("includes/nav.html");
+          $("footer").load("includes/footer.html")
+        });
       });
     </script>
   </body>
